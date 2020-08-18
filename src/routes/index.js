@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/',(req,res)=>{    
     //res.sendFile(path.join(__dirname,'views/index.html'));
-    res.render('index.html');
+    res.render('index.html', {title: 'Home'});
 });
 
 router.get('/contact', (req,res) => {

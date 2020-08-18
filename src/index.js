@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 //middlewares= funciones o acciones que se ejecutan antes de procesar una ruta
 
 //static files
-
+app.use(express.static(path.join(__dirname,'public')));
 //routes
 app.use(require('./routes/index'));
 
